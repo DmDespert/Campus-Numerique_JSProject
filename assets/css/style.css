@@ -1,0 +1,152 @@
+/*---== MAIN THEME COLORS ==---*/
+.mcolor {
+    color: red;
+}
+.scolor {
+    color: yellow;
+}
+.bmcolor {
+    background-color: red;
+}
+.bscolor {
+    background-color: yellow;
+}
+
+/*---== FONTS LOADER ==---*/
+.bungee {
+    font-family: 'Bungee', cursive;
+}
+.special {
+    font-family: 'Special Elite', cursive;
+}
+.cutive {
+    font-family: 'Cutive Mono', monospace;
+}
+
+/*---== BASICS ==---*/
+
+html, body {
+    position: absolute;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cutive Mono', monospace;
+}
+header {
+    position: relative;
+    background-color: yellow;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+}
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+}
+h1 {
+    padding: 10px 0 20px 0;
+    line-height: 0em;
+}
+h2 {
+    line-height: 0em;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 160px;
+    flex-direction: column;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+/*---== MENU ==---*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+}
+nav>ul {
+    float: right;
+    padding-right: 50px;
+}
+nav>ul>li {
+    display: inline-block;
+    padding: 7px 10px;
+}
+nav>ul>li>a {
+    color: white;
+    padding: 10px 20px;
+}
+.logo {
+    float: left;
+    padding: 22px 85px;
+    color: white;
+}
+.logo:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 27px;
+    top: 18px;
+    left: 50px;
+    background-image: url('../img/logo.png');
+    background-size: cover;
+    padding-right: 5px;
+}
+/*---== RESPONSIVES METHODS ==---*/
+@media only screen and (max-width: 960px) {
+    .container {
+        margin: 0 100px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .container {
+        margin: 0 50px;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .container {
+        margin: 0 15px;
+    }
+    .logo {
+        padding-left: 8px;
+    }
+    nav>ul {
+        padding-right: 8px;
+    }
+    header {
+        height: 100%;
+    }
+}
+
+/*---== CONTENTS ==---*/
+
+
+/*---== FOOTER ==---*/
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+    background-color: black;
+}
