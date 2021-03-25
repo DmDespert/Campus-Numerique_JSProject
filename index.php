@@ -16,11 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
     <!--CSS ANIMATIONS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--API's-->
+
 </head>
 <body>
-    <header id="top">
+    <header id="top" class="bscolor">
         <nav>
-            <div class="logo bungee">ROBCAD.com</div>
+            <div class="logo bungee">ROB<span class="mcolor">CAD</span>.com</div>
             <ul>
                 <li><a href="#top">Home</a></li>
                 <li><a href=gallery.php">Gallery</a></li>
@@ -30,10 +32,10 @@
         </nav>
         <div class="container">
             <div class="row">
-                <h1 class="bungee">Welcome to Robcad</h1>
+                <h1 class="bungee">Welcome to Rob<span class="mcolor">CAD</span></h1>
             </div>
             <div class="row">
-                <h2 class="second-title special">Bored ? Let's play a <a href="" class="mcolor">game</a></h2>
+                <h2 class="second-title special">Bored ? Let's play a <a href="game.php" class="mcolor">game</a></h2>
             </div>
         </div>
 
@@ -41,22 +43,27 @@
     <main>
         <section>
             <div class="container">
-                <div class="row">
-                    <h3>Last posts</h3>
-                </div>
-                <div class="row">
-
+                <div id="shits" class="row">
+                    <h3 class="bungee">Last shits from Trump</h3>
                 </div>
             </div>
-        </section>
-        <section>
-
         </section>
     </main>
     <footer>
         <div class="container">
-            <div class="row"></div>
+            <div class="row">
+                <div class="block">
+                    <h3 class="bungee text-center">Social networks</h3>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non hendrerit sapien. Maecenas lobortis elit ex, in rutrum nulla placerat in. Proin ac vulputate dolor.</p>
+                </div>
+                <div class="block">
+                    <h3 class="bungee text-center">More informations</h3>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non hendrerit sapien. Maecenas lobortis elit ex, in rutrum nulla placerat in. Proin ac vulputate dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+                </div>
+            </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

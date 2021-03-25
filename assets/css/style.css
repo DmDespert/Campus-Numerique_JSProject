@@ -9,7 +9,7 @@
     background-color: red;
 }
 .bscolor {
-    background-color: yellow;
+    background-color: #FFC329;
 }
 
 /*---== FONTS LOADER ==---*/
@@ -113,6 +113,13 @@ nav>ul>li>a {
     background-size: cover;
     padding-right: 5px;
 }
+/*---== TEXTS FORMS ==---*/
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
 /*---== RESPONSIVES METHODS ==---*/
 @media only screen and (max-width: 960px) {
     .container {
@@ -122,6 +129,9 @@ nav>ul>li>a {
 @media only screen and (max-width: 560px) {
     .container {
         margin: 0 50px;
+    }
+    .row {
+        flex-direction: column;
     }
 }
 @media only screen and (max-width: 380px) {
@@ -141,6 +151,9 @@ nav>ul>li>a {
 
 /*---== CONTENTS ==---*/
 
+.block {
+    padding: 0 30px;
+}
 
 /*---== FOOTER ==---*/
 footer {
@@ -149,4 +162,5 @@ footer {
     justify-content: center;
     padding: 150px 0;
     background-color: black;
+    color: white;
 }
