@@ -58,6 +58,11 @@ h2 {
 }
 a {
     text-decoration: none;
+    color: inherit;
+    transition: 0.5s all ease-in-out;
+}
+nav a:hover {
+    color: #FFC329;
 }
 .container {
     width: 100%;
@@ -133,6 +138,12 @@ nav>ul>li>a {
     .row {
         flex-direction: column;
     }
+    h1 {
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 1.3em;
+    }
 }
 @media only screen and (max-width: 380px) {
     .container {
@@ -153,6 +164,11 @@ nav>ul>li>a {
 
 .block {
     padding: 0 30px;
+}
+
+#start-section {
+    background-color: #282828;
+    color: white;
 }
 
 /*---== FOOTER ==---*/
