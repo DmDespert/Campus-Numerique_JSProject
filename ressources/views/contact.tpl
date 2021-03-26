@@ -1,5 +1,5 @@
 
-    <main>
+        <main id="content">
         <section id="start-section">
             <div class="container">
                 <div class="row">
