@@ -43,7 +43,7 @@ $mainTitle = [
 ];
 
 $secondTitle = [
-    'home' => $secondTitle = "Bored ? Let's play a <a href='game.php' class='mcolor'>game",
+    'home' => $secondTitle = "Bored ? Let's play a <a href='/index.php?action=game' class='mcolor'>game",
     'gallery' => $secondTitle = "Yup, that's nice to be here",
     'game' => $secondTitle = "Here's the nice gaaaaame !! Woohoo !",
     'contact' => $secondTitle = "Do not do that, i won't read your shit",
