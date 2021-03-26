@@ -50,6 +50,13 @@ $secondTitle = [
     '404' => $secondTitle = "404 - robcad.com"
 ];
 
+$scriptsLoader = [
+    'home' => $scriptsLoader = '<script src="ressources/js/home.js"></script>',
+    'gallery' => $scriptsLoader = '<script src="ressources/js/gallery.js"></script>',
+    'game' => $scriptsLoader = '<script src="ressources/js/game.js"></script>',
+    'contact' => $scriptsLoader = '<script src="ressources/js/contact.js"></script>',
+];
+
 if (filter_has_var(INPUT_GET, 'action')) {
     $action = filter_input(INPUT_GET, 'action', FILTER_SANITIZE_STRING);
     if (!isset($road[$action])) {
@@ -57,7 +64,7 @@ if (filter_has_var(INPUT_GET, 'action')) {
     }
     $files = $road[$action];
 } else {
-    header("Location: /index.php?action=home",TRUE,301);
+    header("Location: /index.php?action=home", TRUE, 301);
 }
 
 require('ressources/views/layouts/header.tpl');
