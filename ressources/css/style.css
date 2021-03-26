@@ -171,6 +171,24 @@ nav>ul>li>a {
     color: white;
 }
 
+.button-game {
+    padding: 12px 24px;
+    font-family: 'Bungee', cursive;
+}
+
+.img-result {
+    position: relative;
+    margin-top: 50px;
+    width: 180px;
+    height: 180px;
+    left: 50%;
+    margin-left: -90px;
+    background-image: url('../img/start.jpeg');
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 50%;
+}
+
 /*---== FOOTER ==---*/
 footer {
     position: relative;

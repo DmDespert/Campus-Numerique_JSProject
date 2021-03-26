@@ -43,11 +43,18 @@ $mainTitle = [
 ];
 
 $secondTitle = [
-    'home' => $secondTitle = "Bored ? Let's play a <a href='game.php' class='mcolor'>game",
+    'home' => $secondTitle = "Bored ? Let's play a <a href='/index.php?action=game' class='mcolor'>game",
     'gallery' => $secondTitle = "Yup, that's nice to be here",
     'game' => $secondTitle = "Here's the nice gaaaaame !! Woohoo !",
     'contact' => $secondTitle = "Do not do that, i won't read your shit",
     '404' => $secondTitle = "404 - robcad.com"
+];
+
+$scriptsLoader = [
+    'home' => $scriptsLoader = '<script src="ressources/js/home.js"></script>',
+    'gallery' => $scriptsLoader = '<script src="ressources/js/gallery.js"></script>',
+    'game' => $scriptsLoader = '<script src="ressources/js/game.js"></script>',
+    'contact' => $scriptsLoader = '<script src="ressources/js/contact.js"></script>',
 ];
 
 if (filter_has_var(INPUT_GET, 'action')) {
@@ -57,7 +64,7 @@ if (filter_has_var(INPUT_GET, 'action')) {
     }
     $files = $road[$action];
 } else {
-    header("Location: /index.php?action=home",TRUE,301);
+    header("Location: /index.php?action=home", TRUE, 301);
 }
 
 require('ressources/views/layouts/header.tpl');
