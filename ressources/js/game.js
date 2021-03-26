@@ -30,17 +30,17 @@ $(document).ready(function(){
             let computerRand = getRndInteger(0,2);
             if(computerRand == 0) {
                 let rock =  "rock";
-                $('.computer').text("Computer did " + rock);
+                $('.computer').text("Trump did " + rock);
                 return rock;
             }
             else if(computerRand == 1) {
                 let paper = "paper";
-                $('.computer').text("Computer did " + paper);
+                $('.computer').text("Trump did " + paper);
                 return paper;
             }
             else {
                 let scissors = "scissors";
-                $('.computer').text("Computer did " + scissors);
+                $('.computer').text("Trump did " + scissors);
                 return scissors;
             }
         }
