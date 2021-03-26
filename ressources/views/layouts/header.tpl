@@ -23,6 +23,9 @@
     <header id="top" class="bscolor">
         <nav>
             <a href="#top" class="logo bungee">ROB<span class="mcolor">CAD</span>.com</a>
+            <div class="dropdown-menu">
+
+            </div>
             <ul>
                 <li><a href="/index.php?action=home">Home</a></li>
                 <li><a href="/index.php?action=gallery">Gallery</a></li>
@@ -38,6 +41,7 @@
                     <h2 class="second-title special text-center"><?php echo $secondTitle[$url] ?></a></h2>
                 </div>
             </div>
+            <div class="scrolldown"><a href="#content">Scrolldown</a></div>
         </div>
 
     </header>
