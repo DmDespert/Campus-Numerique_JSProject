@@ -1,4 +1,4 @@
-<main>
+<main id="content">
     <section id="start-section">
         <div class="container">
             <div class="row">
@@ -33,7 +33,7 @@
                     <div class="img-result"></div>
                     <p class="player">Your choice</p>
                     <p class="result bungee">Here is the result</p>
-                    <p class="computer">Computer choice</p>
+                    <p class="computer">Trump choice</p>
                 </div>
             </div>
         </div>
