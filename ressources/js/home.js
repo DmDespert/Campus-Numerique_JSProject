@@ -12,8 +12,6 @@ $(document).ready(function(){
         dataType : "json",
     })
         //Ce code sera exécuté en cas de succès - La réponse du serveur est passée à done()
-        /*On peut par exemple convertir cette réponse en chaine JSON et insérer
-         * cette chaine dans un div id="res"*/
         .done(function(response){
             let tags = response._embedded.tag;
 
@@ -29,7 +27,6 @@ $(document).ready(function(){
         })
 
         //Ce code sera exécuté en cas d'échec - L'erreur est passée à fail()
-        //On peut afficher les informations relatives à la requête et à l'erreur
         .fail(function(error){
             alert("La requête s'est terminée en échec. Infos : " + JSON.stringify(error));
         })
