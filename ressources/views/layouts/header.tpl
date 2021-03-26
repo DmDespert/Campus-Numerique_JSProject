@@ -9,14 +9,15 @@
     <!--TITLE & DESCRPTION-->
     <title><?php echo $pagesMetaTitles[$url] ?></title>
     <meta name="description" content="<?php echo $pagesMetaDescriptions[$url] ?>"/>
-    <!--CSS-->
-    <link rel="stylesheet" href="ressources/css/style.css">
-    <link rel="stylesheet" href="ressources/css/font-awesome.min.css">
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cutive+Mono&family=Special+Elite&display=swap" rel="stylesheet">
     <!--CSS ANIMATIONS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--API's-->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="ressources/css/style.css">
+    <link rel="stylesheet" href="ressources/css/font-awesome.min.css">
 
 </head>
 <body>
