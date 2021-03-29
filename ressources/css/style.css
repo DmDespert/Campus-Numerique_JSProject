@@ -51,10 +51,13 @@ section {
 }
 h1 {
     padding: 10px 0 20px 0;
-    line-height: 0em;
+    line-height: 1em;
+    margin: 0;
 }
 h2 {
     line-height: 0em;
+    margin: 0;
+    line-height: 1em;
 }
 a {
     text-decoration: none;
@@ -172,12 +175,12 @@ nav>ul>li>a {
 }
 #start-section:before {
     content:"";
-    width: 100px;
+    width: 178px;
     height: 100px;
     position: absolute;
     top: 0;
     margin-top: -100px;
-    background-image: url('../img/robot.png');
+    background-image: url('../img/robo.svg');
     left: 20%;
 
 }
@@ -198,6 +201,29 @@ nav>ul>li>a {
     background-size: cover;
     background-position: 50%;
     border-radius: 50%;
+}
+
+.scrolldown {
+    padding-top: 30px;
+}
+
+.fotorama {
+    margin-top: 50px;
+}
+
+.gallery {
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 560px) {
+    .gallery {
+        flex-direction: column;
+    }
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
 }
 
 /*---== FOOTER ==---*/
