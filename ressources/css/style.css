@@ -236,6 +236,21 @@ nav>ul>li>a {
     flex-direction: initial;
 }
 
+.block-img img {
+    position: relative;
+}
+
+.block-img button {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border: 0;
+}
+
+.hidden-btn {
+    border: 0;
+}
+
 /*---== FOOTER ==---*/
 footer {
     position: relative;
