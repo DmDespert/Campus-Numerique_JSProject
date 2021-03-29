@@ -4,6 +4,7 @@ $(document).ready(function(){
     $.ajax({
         //L'URL de la requête
         url: "https://api.tronalddump.io/tag",
+        url: "https://api.tronalddump.io/tag/{value}",
 
         //La méthode d'envoi (type de requête)
         method: "GET",

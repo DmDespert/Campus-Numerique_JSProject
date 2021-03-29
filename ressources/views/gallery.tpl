@@ -19,33 +19,28 @@
         </div>
 
     </section>
-    <section>
+    <section id="gallery">
 
         <div class="container">
             <div class="row">
-                <div class="display-btn">
+                <div class="display-btn text-center">
                     <button class="row-display">Row</button>
-                    <button class="column-display">column
-                    </button>
+                    <button class="column-display">column</button>
+                    <input type="text" value="URL" id="getUrl">
+                    <button class="add-button" onclick="addImage();">+</button>
                 </div>
             </div>
+        </div>
 
-            <div class="row gallery">
-                <img src="ressources/img/carousel/car1.jpeg" alt="" class="responsive">
-                <img src="ressources/img/carousel/car1.jpeg" alt="" class="responsive">
-            </div>
-            <div class="row gallery">
-                <img src="ressources/img/carousel/car1.jpeg" alt="" class="responsive">
-                <img src="ressources/img/carousel/car1.jpeg" alt="" class="responsive">
-            </div>
-            <div class="row gallery">
-                <img src="ressources/img/carousel/car1.jpeg" alt="" class="responsive">
-                <img src="ressources/img/carousel/car1.jpeg" alt="" class="responsive">
-            </div>
-            <div class="row gallery">
-                <img src="ressources/img/carousel/car1.jpeg" alt="" class="responsive">
-                <img src="ressources/img/carousel/car1.jpeg" alt="" class="responsive">
+
+    </section>
+    <section id="gallery-display">
+        <div class="container">
+            <div class="block-img text-center">
+
             </div>
         </div>
+
     </section>
+
 </main>
