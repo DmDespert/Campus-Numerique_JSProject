@@ -70,4 +70,18 @@ $(document).ready(function () {
 
 });
 
+function sendArticle() {
+    let var1 = $('#title').val();
+    let var2 = $('#article-content').val();
+
+    $('#personnals-articles>.container>.row:last').after(
+        '<div class="row">\
+        <h4>' + var1 + '</h4>\
+        </div>\
+        <div class="row">\
+        <p>'+ var2 +'</p>\
+        </div>'
+    );
+}
+
 

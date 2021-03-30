@@ -16,4 +16,20 @@
                 </div>
             </div>
         </section>
+        <section id="personnals-articles">
+            <div class="container">
+                <div id="articles" class="row">
+                    <h3 class="bungee text-center title-tag">Write your shit here</h3>
+                </div>
+                <div class="row">
+                    <input id="title" name="title" type="text" value="Your title here">
+                </div>
+                <div class="row">
+                    <textarea name="" id="article-content" cols="30" rows="10"></textarea>
+                </div>
+                <div class="row">
+                    <button onclick="sendArticle()">Send your shit</button>
+                </div>
+            </div>
+        </section>
     </main>
