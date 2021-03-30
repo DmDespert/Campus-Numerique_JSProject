@@ -94,16 +94,35 @@ nav {
     background-color: black;
     z-index: 100;
 }
-nav>ul {
+.dropdown-menu {
     float: right;
+    width: 40px;
+    height: 40px;
+    margin: 12px 45px 12px 12px;
+}
+nav>ul {
+    position: absolute;
+    right: 0;
     padding-right: 50px;
+    padding-bottom: 30px;
+    text-align: right;
+    background-color: black;
+    z-index: -1;
+    transition: 0.8s all ease-in-out;
+}
+.menu-open {
+    top: 47px;
+    color: white;
+}
+.menu-close {
+    top: -400px;
+    color: black;
 }
 nav>ul>li {
-    display: inline-block;
-    padding: 7px 10px;
+    display: block;
+    padding: 14px 10px;
 }
 nav>ul>li>a {
-    color: white;
     padding: 10px 20px;
 }
 .logo {
