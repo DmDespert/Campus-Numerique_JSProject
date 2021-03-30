@@ -28,10 +28,10 @@
 
             </div>
             <ul>
-                <li><a href="/index.php?action=home">Home</a></li>
-                <li><a href="/index.php?action=gallery">Gallery</a></li>
-                <li><a href="/index.php?action=game">Game</a></li>
-                <li><a href="/index.php?action=contact">Contact</a></li>
+                <li><a href="index.php?action=home">Home</a></li>
+                <li><a href="index.php?action=gallery">Gallery</a></li>
+                <li><a href="index.php?action=game">Game</a></li>
+                <li><a href="index.php?action=contact">Contact</a></li>
             </ul>
         </nav>
         <div class="container">

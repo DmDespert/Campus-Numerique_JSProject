@@ -64,7 +64,7 @@ if (filter_has_var(INPUT_GET, 'action')) {
     }
     $files = $road[$action];
 } else {
-    header("Location: /index.php?action=home", TRUE, 301);
+    header("Location: index.php?action=home", TRUE, 301);
 }
 
 require('ressources/views/layouts/header.tpl');

@@ -1,6 +1,6 @@
 <?php
 //---NOM DE DOMAINE---//
 
-// www.piannamassage.fr
+// www.robcad.fr
 require 'bootstrap/app.php';
 require('routes/web.php');
