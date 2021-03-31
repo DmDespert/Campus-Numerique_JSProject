@@ -28,8 +28,12 @@
                     <textarea name="" id="article-content" cols="30" rows="10"></textarea>
                 </div>
                 <div class="row">
-                    <button onclick="sendArticle()">Send your shit</button>
+                    <label id="errorMsg" for="sendArticle"></label>
+                </div>
+                <div class="row">
+                    <button type="submit" id="sendArticle" name="sendArticle">Send your shit</button>
                 </div>
             </div>
         </section>
     </main>
+

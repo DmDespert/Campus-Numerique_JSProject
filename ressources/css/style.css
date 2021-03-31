@@ -281,6 +281,10 @@ nav>ul>li>a {
     background-image: url('../img/carousel/car1.jpeg');
 }
 
+.warning {
+    border: 3px solid red;
+}
+
 /*---== FOOTER ==---*/
 footer {
     position: relative;
