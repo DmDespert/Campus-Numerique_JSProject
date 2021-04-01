@@ -23,8 +23,15 @@
     font-family: 'Cutive Mono', monospace;
 }
 
-/*---== BASICS ==---*/
+/*---== TEXTS FORMS ==---*/
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
 
+/*---== BASICS ==---*/
 html, body {
     position: absolute;
     overflow-x: hidden;
@@ -85,6 +92,7 @@ nav a:hover {
     padding: 0;
     margin: 0;
 }
+
 /*---== MENU ==---*/
 nav {
     position: fixed;
@@ -93,12 +101,18 @@ nav {
     width: 100%;
     background-color: black;
     z-index: 100;
+    transform-style: preserve-3d;
 }
 .dropdown-menu {
     float: right;
+    transform: rotate(90deg);
     width: 40px;
     height: 40px;
+    padding: 11px;
+    text-align: center;
     margin: 12px 45px 12px 12px;
+    background-color: #FFC329;
+    border: 0;
 }
 nav>ul {
     position: absolute;
@@ -109,6 +123,7 @@ nav>ul {
     background-color: black;
     z-index: -1;
     transition: 0.8s all ease-in-out;
+    transform: translateZ(-10px)
 }
 .menu-open {
     top: 47px;
@@ -141,13 +156,122 @@ nav>ul>li>a {
     background-size: cover;
     padding-right: 5px;
 }
-/*---== TEXTS FORMS ==---*/
-.text-center {
-    text-align: center;
+
+/*---== CONTENTS ==---*/
+
+.block {
+    padding: 0 30px;
 }
-.text-justify {
-    text-align: justify;
+#start-section {
+    background-color: #282828;
+    color: white;
 }
+#start-section:before {
+    content:"";
+    width: 178px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    margin-top: -100px;
+    background-image: url('../img/robo.svg');
+    left: 20%;
+
+}
+.button-game {
+    padding: 12px 24px;
+    font-family: 'Bungee', cursive;
+}
+.img-result {
+    position: relative;
+    margin-top: 50px;
+    width: 180px;
+    height: 180px;
+    left: 50%;
+    margin-left: -90px;
+    background-image: url('../img/start.jpeg');
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 50%;
+}
+.scrolldown {
+    padding-top: 30px;
+}
+.fotorama {
+    margin-top: 50px;
+}
+.display-btn button {
+    padding: 12px 22px;
+    cursor: pointer;
+}
+#gallery-display {
+    margin-top: 0;
+    padding-top: 0;
+}
+.block-img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: initial;
+}
+.block-img img {
+    position: relative;
+}
+.block-img button {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    padding: 0;
+    border: 0;
+    left: -50%;
+    background-color: red;
+}
+.img-responsive {
+    width: 100%;
+    height: auto;
+    max-width: 30%;
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+.img-basic {
+    background-image: url('../img/carousel/car1.jpeg');
+}
+.warning {
+    border: 3px solid red;
+}
+.btn {
+    background-color: #ffc329;
+    padding: 12px 24px;
+    margin: 10px;
+    border: 0;
+    transition: 0.4s all ease-in-out;
+}
+.btn:hover {
+    background-color: #bc991f;
+}
+input {
+    margin: 10px;
+    padding: 8px 16px;
+}
+textarea {
+    margin: 10px;
+    padding: 8px 16px;
+}
+
+/*---== FOOTER ==---*/
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 150px 0;
+    background-color: black;
+    color: white;
+}
+
 /*---== RESPONSIVES METHODS ==---*/
 @media only screen and (max-width: 960px) {
     .container {
@@ -181,112 +305,4 @@ nav>ul>li>a {
     header {
         height: 100%;
     }
-}
-
-/*---== CONTENTS ==---*/
-
-.block {
-    padding: 0 30px;
-}
-
-#start-section {
-    background-color: #282828;
-    color: white;
-}
-#start-section:before {
-    content:"";
-    width: 178px;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    margin-top: -100px;
-    background-image: url('../img/robo.svg');
-    left: 20%;
-
-}
-
-.button-game {
-    padding: 12px 24px;
-    font-family: 'Bungee', cursive;
-}
-
-.img-result {
-    position: relative;
-    margin-top: 50px;
-    width: 180px;
-    height: 180px;
-    left: 50%;
-    margin-left: -90px;
-    background-image: url('../img/start.jpeg');
-    background-size: cover;
-    background-position: 50%;
-    border-radius: 50%;
-}
-
-.scrolldown {
-    padding-top: 30px;
-}
-
-.fotorama {
-    margin-top: 50px;
-}
-
-.display-btn button {
-    padding: 12px 22px;
-    cursor: pointer;
-}
-
-
-
-#gallery-display {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.block-img {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: initial;
-}
-
-.block-img img {
-    position: relative;
-}
-
-.block-img button {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    padding: 0;
-    border: 0;
-    left: -50%;
-    background-color: red;
-}
-
-.img-responsive {
-    width: 100%;
-    height: auto;
-    max-width: 30%;
-    min-height: 300px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 5px;
-}
-
-.img-basic {
-    background-image: url('../img/carousel/car1.jpeg');
-}
-
-/*---== FOOTER ==---*/
-footer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 150px 0;
-    background-color: black;
-    color: white;
 }

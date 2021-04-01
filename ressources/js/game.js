@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //---== Little Game ==---
-    $('button').on('click', function() {
+    $('.button-game').on('click', function() {
         let playerInput = $(this).attr("value");
         const win = "Well done, trump is angry";
         const draw = "Draw !"
