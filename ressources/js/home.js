@@ -97,21 +97,29 @@ $(document).ready(function () {
 
 });
 
+let nb = 1;
+
 function sendArticle() {
     let var1 = $('#title').val();
     let var2 = $('#article-content').val();
 
     $('#personnals-articles>.container>.row:last').after(
-        '<div class="row">\
+        '<div class="article'+nb+'">\
+        <div class="row">\
         <h4>' + var1 + '</h4>\
         </div>\
         <div class="row">\
         <p>' + var2 + '</p>\
+        </div>\
+        <div class="row">\
+        <button onclick="removeArticle('+nb+')">X</button>\
+        </div>\
         </div>'
     );
+    nb++;
 }
 
 
-function removeImg(id) {
-    $('.img' + id).remove();
+function removeArticle(id) {
+    $('.article' + id).remove();
 }

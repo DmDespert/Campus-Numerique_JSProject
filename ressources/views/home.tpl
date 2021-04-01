@@ -22,7 +22,7 @@
                     <h3 class="bungee text-center title-tag">Write your shit here</h3>
                 </div>
                 <div class="row">
-                    <input id="title" name="title" type="text" value="Your title here">
+                    <input id="title" name="title" type="text" value="">
                 </div>
                 <div class="row">
                     <textarea name="" id="article-content" cols="30" rows="10"></textarea>
@@ -31,7 +31,7 @@
                     <label id="errorMsg" for="sendArticle"></label>
                 </div>
                 <div class="row">
-                    <button type="submit" id="sendArticle" name="sendArticle">Send your shit</button>
+                    <button type="submit" id="sendArticle" name="sendArticle" class="btn">Send your shit</button>
                 </div>
             </div>
         </section>

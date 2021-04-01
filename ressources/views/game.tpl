@@ -23,7 +23,7 @@
             </div>
             <div class="row">
                 <div class="block">
-                    <button class="button-game" value="rock">Rock</button>
+                    <button class="button-game" value="rock">Obama</button>
                     <button class="button-game" value="paper">Paper</button>
                     <button class="button-game" value="scissors">Scissors</button>
                 </div>
